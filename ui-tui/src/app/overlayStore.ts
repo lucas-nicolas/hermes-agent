@@ -10,6 +10,7 @@ const buildOverlayState = (): OverlayState => ({
   clarify: null,
   confirm: null,
   modelPicker: false,
+  modelPickerSessionOnly: false,
   pager: null,
   pluginsHub: false,
   secret: null,
@@ -61,6 +62,7 @@ export const resetFlowOverlays = () =>
     agents: $overlayState.get().agents,
     agentsInitialHistoryIndex: $overlayState.get().agentsInitialHistoryIndex,
     modelPicker: $overlayState.get().modelPicker,
+    modelPickerSessionOnly: $overlayState.get().modelPickerSessionOnly,
     pluginsHub: $overlayState.get().pluginsHub,
     sessions: $overlayState.get().sessions,
     skillsHub: $overlayState.get().skillsHub

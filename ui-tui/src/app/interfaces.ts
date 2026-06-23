@@ -135,6 +135,7 @@ export interface OverlayState {
   clarify: ClarifyReq | null
   confirm: ConfirmReq | null
   modelPicker: boolean
+  modelPickerSessionOnly: boolean
   pager: null | PagerState
   pluginsHub: boolean
   secret: null | SecretReq
